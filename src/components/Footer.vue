@@ -47,7 +47,10 @@
         <div>豫ICP备12138号</div>
       </div>
       <div class="footer-right">
-      <div>111</div>
+        <i class="iconfont icon-pingguo"></i>
+        <i class="iconfont icon-QQ"></i>
+        <i class="iconfont icon-github"></i>
+        <i class="iconfont icon-zhihu-circle-fill"></i>
     </div>
     </div>
   </div>

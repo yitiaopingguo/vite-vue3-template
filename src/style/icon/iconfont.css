@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4300164 */
+  src: url('iconfont.woff2?t=1698133413615') format('woff2'),
+       url('iconfont.woff?t=1698133413615') format('woff'),
+       url('iconfont.ttf?t=1698133413615') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sass:before {
+  content: "\e6d9";
+}
+
+.icon-Vue:before {
+  content: "\e799";
+}
+
+.icon-eslint:before {
+  content: "\e634";
+}
+
+.icon-chanpinjiemiantubiao-19:before {
+  content: "\e605";
+}
+

@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script lang="js"></script>
 
 <style scoped lang="scss">
 .header{

@@ -1,6 +1,8 @@
 <template>
     <div>
+        <HomeHeader></HomeHeader>
         <HomeContent></HomeContent>
+        <HomeFooter></HomeFooter>
     </div>
 </template>
 <script lang="js">
@@ -8,7 +10,9 @@ export default {
     props: {
     },
     components: {
-        HomeContent : () => import('./components/homeContent.vue')
+        HomeHeader : () => import('./components/homeHeader.vue'),
+        HomeContent : () => import('./components/homeContent.vue'),
+        HomeFooter : () => import('./components/homeFooter.vue')
     },
     data() {
         return {

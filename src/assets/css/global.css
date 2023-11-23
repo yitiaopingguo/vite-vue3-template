@@ -143,3 +143,12 @@ body {
     Helvetica,Arial,
     sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol
 }
+
+@font-face {
+  font-family: "Heavy";
+  src: url('@/assets/fonts/Heavy.woff');
+}
+@font-face {
+  font-family: "Siyuan";
+  src: url('@/assets/fonts/Siyuan.woff');
+}

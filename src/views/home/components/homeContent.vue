@@ -49,7 +49,7 @@ export default {
             strings: ['游泳', '滑滑板','打羽毛球'],
             typeSpeed: 50,
             backSpeed: 30,
-            loop: true
+            loop: false
           });
         },
         initLottie(id){

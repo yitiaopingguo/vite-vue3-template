@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div>嘻嘻嘻</div>
+    <div class="name">chaofan lu</div>
     <div class="right">
       <span class="sel_span">首页</span>
       <span class="hov">关于</span>
@@ -23,10 +23,19 @@
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  padding: 20px 30px;
+  padding: 30px 30px 10px 30px;
   color: #5c5e70;
   box-sizing: border-box;
   box-shadow: 0 4px 8px #0000001a;
+  .name{
+    transition: all 1.6s;
+    margin-left: 17px;
+    padding: 2px 4px;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #4e5064;
+    white-space: nowrap;
+  }
   .right{
     span{
       font-size: 16px;

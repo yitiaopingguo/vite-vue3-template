@@ -8,8 +8,8 @@ export default {
   name: "HelloWorld",
   props: {
     id: String,
-    width:String,
-    height:String
+    width:Number,
+    height:Number
   },
   data() {
     return {};

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="content-box">
         <HomeHeader></HomeHeader>
         <HomeContent></HomeContent>
         <HomeFooter></HomeFooter>
@@ -35,5 +35,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+.content-box{
+    padding: 90px 0;
+    background: var(--theme_bg_color);
+}
 </style>

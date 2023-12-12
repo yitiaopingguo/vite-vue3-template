@@ -9,22 +9,23 @@ export default {
   props: {
     id: String,
     width:Number,
-    height:Number
+    height:Number,
+    path:String
   },
   data() {
     return {};
   },
   mounted() {
-    this.initLottie(this.id);
+    this.initLottie(this.id,this.path);
   },
   methods: {
-    initLottie(id) {
+    initLottie(id,path) {
       lottie.loadAnimation({
         container: document.getElementById(id),
         renderer: "svg", // 渲染方式：svg、canvas
         loop: true, // 循环播放，默认：false
         autoplay: true, //自动播放 ，默认：true
-        path: "https://assets5.lottiefiles.com/packages/lf20_yppp9lxb.json", // json 路径
+        path// json 路径
       });
     },
   },

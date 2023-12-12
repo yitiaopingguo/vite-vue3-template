@@ -1,21 +1,21 @@
 <template>
   <div class="content">
-    <div class="page">
+    <div class="page" id="floor-1">
       <div class="person">
-        你好，
+        Hello，
         <br />我是一条苹果， <br />是一个前端开发工程师 <br />我喜欢<span class="typed-text"></span>
       </div>
       <div class="person-right">
         <div class="rocket"></div>
         <div>
-          <Lottie v-for="item in 2" :key="item" id="fire" :width="60" :height="60"></Lottie>
+          <Lottie v-for="item in 2" :key="item" id="fire" :path="path" :width="60" :height="60"></Lottie>
         </div>
       </div>
     </div>
-    <div class="floor-2">
+    <div class="floor-2" id="floor-2">
       <img src="../../../assets/images/page-hero-workspace.webp" alt="">
     </div>
-    <div class="floor-3">
+    <div class="floor-3" id="floor-3">
       <div class="head-img">
         <img src="../../../assets/images/head.png" alt="">
       </div>
@@ -26,12 +26,12 @@
         <el-button style="background-color: #db1f05;color: aliceblue;">了解更多👇</el-button>
       </div>
     </div>
-    <div class="floor-4">
+    <div class="floor-4" id="floor-4">
       <div>
         <img src="../../../assets/images/cartoon-rocket.webp" alt="">
       </div>
     </div>
-    <div class="floor-5">
+    <div class="floor-5" id="floor-5">
       <h2 class="title">个人项目</h2>
       <div class="item-box">
         <div class="item" v-for="item in 4" :key="item">
@@ -48,6 +48,7 @@
 
 <script lang="js">
 import Typed from 'typed.js';
+import bus from '../../../utils/bus'
 
 export default {
   props: {
@@ -57,11 +58,16 @@ export default {
   },
   data() {
     return {
-
+      path:'https://assets5.lottiefiles.com/packages/lf20_yppp9lxb.json'
     }
   },
   created() {
-
+    bus.$on('toEl', val => {
+      const $toEl = document.getElementById(val)
+      if ($toEl) {
+    $toEl.scrollIntoView({ behavior: "smooth" });
+      }
+    })
   },
   mounted() {
     this.initTyped()
@@ -85,8 +91,6 @@ export default {
 <style scoped lang="scss">
 .content {
   width: 100%;
-  background-color: white;
-  margin-top: 90px;
 
   .page {
     width: 100%;
